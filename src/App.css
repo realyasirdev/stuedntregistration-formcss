@@ -1,0 +1,178 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body { font-family: Arial, sans-serif; background: #3d3db5; }
+
+/* ── Top white bar ── */
+.top-bar { background: #fff; padding: 16px 0; text-align: center; }
+.top-bar h1 {
+  color: #3d3db5;
+  font-size: 1.35rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-decoration: underline;
+  font-family: Arial, sans-serif;
+}
+
+/* ── Form body ── */
+.form-body { background: #3d3db5; max-width: 980px; margin: 0 auto; padding: 20px 60px 30px; }
+
+/* ── Row layout ── */
+.row { display: flex; align-items: flex-start; margin-bottom: 10px; }
+
+/* ── Labels ── */
+.lbl {
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 900;
+  min-width: 150px;
+  padding-top: 4px;
+  letter-spacing: 0.5px;
+  font-family: Arial, sans-serif;
+}
+
+/* ── Text / Email / Number inputs ── */
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  background: #fff;
+  border: 1px solid #999;
+  height: 22px;
+  font-size: 0.78rem;
+  padding: 3px 6px;
+  outline: none;
+  font-family: Arial, sans-serif;
+}
+input.w180 { width: 180px; }
+input.w160 { width: 160px; }
+input.w120 { width: 120px; }
+input.err-inp { border: 1px solid red !important; }
+
+/* ── Select ── */
+select {
+  background: #fff;
+  border: 1px solid #999;
+  height: 24px;
+  font-size: 0.72rem;
+  padding: 3px 5px;
+  outline: none;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+}
+
+/* ── Textarea ── */
+textarea {
+  background: #fff;
+  border: 1px solid #999;
+  width: 200px;
+  height: 60px;
+  font-size: 0.78rem;
+  padding: 4px 6px;
+  resize: none;
+  outline: none;
+  font-family: Arial, sans-serif;
+}
+
+/* ── Hint text ── */
+.hint { color: #fff; font-size: 0.68rem; margin-left: 6px; padding-top: 4px; }
+
+/* ── Radio & Checkbox wrappers ── */
+.radio-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 2px;
+  flex-wrap: wrap;
+}
+.radio-wrap label,
+.cb-row label,
+.others-row label {
+  color: #fff;
+  font-size: 0.78rem;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+}
+.radio-wrap input[type="radio"],
+.cb-row input[type="checkbox"],
+.others-row input[type="checkbox"] {
+  width: 12px;
+  height: 12px;
+}
+
+.cb-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  padding-top: 3px;
+}
+.others-row { display: flex; align-items: center; gap: 8px; margin-top: 6px; }
+
+/* ── Qualification table ── */
+table.qt { border-collapse: collapse; font-size: 0.72rem; font-family: Arial, sans-serif; }
+table.qt th { color: #fff; padding: 4px 8px; font-weight: 700; text-align: left; }
+table.qt td { color: #fff; padding: 3px 8px; vertical-align: middle; }
+table.qt input {
+  background: #fff;
+  border: 1px solid #999;
+  height: 20px;
+  font-size: 0.72rem;
+  padding: 2px 4px;
+  outline: none;
+  font-family: Arial, sans-serif;
+}
+table.qt input.brd { width: 120px; }
+table.qt input.pct { width: 100px; }
+table.qt input.yr  { width: 110px; }
+
+.q-hints { display: flex; gap: 50px; margin-top: 4px; padding-left: 150px; }
+.q-hints span { color: #fff; font-size: 0.65rem; }
+
+/* ── Buttons ── */
+.btns { display: flex; justify-content: center; gap: 8px; margin-top: 20px; }
+.btns button {
+  background: #d4d0d0;
+  border: 1px solid #888;
+  padding: 3px 16px;
+  font-size: 0.78rem;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+}
+.btns button:hover { background: #bbb; }
+
+/* ── Error messages ── */
+.err-msg { color: #ffcccc; font-size: 0.65rem; margin-left: 5px; display: none; }
+.err-msg.show { display: inline; }
+
+/* ── Success page ── */
+#successPage {
+  background: #3d3db5;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.success-box {
+  background: #fff;
+  border-radius: 8px;
+  padding: 40px 50px;
+  text-align: center;
+  max-width: 420px;
+  width: 100%;
+}
+.success-box h2 { color: #3d3db5; font-size: 1.3rem; font-weight: 900; margin-bottom: 12px; }
+.success-box p  { color: #333; font-size: 0.9rem; margin-bottom: 8px; }
+.success-box button {
+  background: #3d3db5;
+  color: #fff;
+  border: none;
+  padding: 8px 24px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 14px;
+  font-weight: 700;
+}
